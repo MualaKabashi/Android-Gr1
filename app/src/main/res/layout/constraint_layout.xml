@@ -60,7 +60,7 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="?android:attr/listDivider"
+        android:background="@color/black"
         app:layout_constraintTop_toBottomOf="@id/tv_views"/>
 
     <LinearLayout
@@ -69,7 +69,8 @@
         android:orientation="horizontal"
         android:weightSum="5"
         app:layout_constraintTop_toBottomOf="@id/divider"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttons_layout">
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -112,6 +113,13 @@
             android:gravity="center"
             android:text="Add to" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/buttons_layout"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
