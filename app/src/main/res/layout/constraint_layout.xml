@@ -122,4 +122,74 @@
         app:layout_constraintTop_toBottomOf="@id/buttons_layout"/>
 
 
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        android:id="@+id/et_username"
+        android:layout_marginRight="5dp"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        android:id="@+id/et_password"
+        android:layout_marginLeft="5dp"
+        android:inputType="textPassword"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"
+        android:id="@+id/guideline2"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
